@@ -1,0 +1,240 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark--grayish--magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --light-magenta: #AB5E96;
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 15px;
+  display: flex;
+  font-family: "Spartan", sans-serif;
+}
+
+main {
+  width: 100vw;
+}
+
+.social-proof {
+  background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: left top, left bottom;
+  background-size: auto, 100% auto;
+  padding-bottom: 77px;
+}
+@media screen and (min-width: 1024px) {
+  .social-proof {
+    background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, right bottom;
+    background-size: auto, auto;
+    height: 800px;
+  }
+}
+.social-proof .wrapper {
+  padding: 21px;
+  max-width: 1109px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper {
+    padding: 0;
+  }
+}
+.social-proof .wrapper .grid-social-proof {
+  grid-template-rows: repeat(2, auto);
+  row-gap: 48px;
+  display: grid;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof {
+    row-gap: 35px;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-head {
+  grid-template-rows: repeat(2, auto);
+  display: grid;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-head {
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: none;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-head .presentation {
+  margin-top: 42px;
+  line-height: 1.11;
+  margin-bottom: 19px;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-head .presentation {
+    margin-top: 130px;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-head .presentation .title {
+  text-align: center;
+  color: var(--very-dark-magenta);
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-head .presentation .title {
+    font-size: 3em;
+    text-align: left;
+    margin: 0;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-head .presentation .info {
+  text-align: center;
+  color: var(--very-dark-magenta);
+  font-size: 0.97em;
+  line-height: 1.8;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-head .presentation .info {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-head .rated {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-head .rated {
+    margin-top: 143px;
+    margin-bottom: 55px;
+    align-items: center;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-head .rated .mini-card {
+  display: flex;
+  flex-basis: 100%;
+  background-color: var(--light-grayish-magenta);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 15px;
+  border-radius: 5px;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-head .rated .mini-card {
+    justify-self: flex-end;
+    flex-basis: 449px;
+    flex-direction: row;
+    height: 55px;
+    gap: 30px;
+    justify-content: flex-start;
+    padding: 15px 30px;
+  }
+  .social-proof .wrapper .grid-social-proof .grid-head .rated .mini-card:nth-child(1) {
+    margin-left: 127px;
+  }
+  .social-proof .wrapper .grid-social-proof .grid-head .rated .mini-card:nth-child(2) {
+    margin-left: 176px;
+  }
+  .social-proof .wrapper .grid-social-proof .grid-head .rated .mini-card:nth-child(3) {
+    margin-left: 224px;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-head .rated .mini-card .mini-card__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.social-proof .wrapper .grid-social-proof .grid-head .rated .mini-card .mini-card__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-proof .wrapper .grid-social-proof .grid-head .rated .mini-card .mini-card__body .mini-card__info {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0;
+  color: var(--very-dark-magenta);
+}
+.social-proof .wrapper .grid-social-proof .grid-body {
+  grid-template-rows: repeat(3, auto);
+  row-gap: 15px;
+  display: grid;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-body {
+    grid-template-rows: 265px;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 30px;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-body .card {
+  background-color: var(--very-dark-magenta);
+  border-radius: 15px;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-body .card {
+    height: max-content;
+  }
+  .social-proof .wrapper .grid-social-proof .grid-body .card:nth-child(2) {
+    align-self: center;
+  }
+  .social-proof .wrapper .grid-social-proof .grid-body .card:nth-child(3) {
+    align-self: flex-end;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-body .card blockquote {
+  margin: 0;
+  padding: 37px 34px 34px;
+}
+@media screen and (min-width: 1109px) {
+  .social-proof .wrapper .grid-social-proof .grid-body .card blockquote {
+    padding: 37px 30px 34px;
+  }
+}
+.social-proof .wrapper .grid-social-proof .grid-body .card blockquote .cite__author {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-bottom: 24px;
+}
+.social-proof .wrapper .grid-social-proof .grid-body .card blockquote .cite__author .cite__author-body {
+  margin-left: 20px;
+}
+.social-proof .wrapper .grid-social-proof .grid-body .card blockquote .cite__author .cite__author-body .cite__name {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 0.9em;
+  margin: 0;
+  margin-bottom: 4px;
+}
+.social-proof .wrapper .grid-social-proof .grid-body .card blockquote .cite__author .cite__author-body .cite__work {
+  font-size: 0.9em;
+  color: var(--light-magenta);
+  font-weight: 400;
+  font-style: normal;
+}
+.social-proof .wrapper .grid-social-proof .grid-body .card blockquote .cite__author img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+}
+.social-proof .wrapper .grid-social-proof .grid-body .card blockquote .cite__info {
+  color: white;
+  font-size: 0.85em;
+  line-height: 1.8;
+}
+
+/*# sourceMappingURL=styles.css.map */
